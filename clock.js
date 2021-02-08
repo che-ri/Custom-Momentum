@@ -8,7 +8,7 @@ function getTime() {
     const minutes = date.getMinutes();
     
     //AmOrPm은 hours의 값을 12시간 단위로 변환해줍니다. 
-    const AmOrPm = hours>=12? 'pm' : "am";
+    const AmOrPm = hours>=12? 'PM' : "AM";
     //AmOrPm은 12크거나 같으면 pm 아니면 am으로 리턴
     hours = (hours%12)||12;
     //hours는 hours의%12이다. hours가 12일때는 값이 0이 되므로 12로 리턴한다.

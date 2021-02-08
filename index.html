@@ -10,18 +10,29 @@
 </head>
 
 <body>
-    <input id="js-daynight" type="button" value="night">
-    <div class="js-clock">
-        <h1>00:00</h1>
+    <div class="body-container bg-dark">
+        <input id="js-daynight" type="button" value="night">
+
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+
+        <form class="js-form form showing">
+            <input type="text" placeholder="What's your name?">
+        </form>
+
+        <h4 class="js-greetings greetings">hello!</h4>
+
+        <form class="js-toDoForm">
+            <input type="text" placeholder="Write a to do">
+        </form>
+        <ul class="js-toDoList"></ul>
     </div>
-    <form class="js-form form showing">
-        <input type="text" placeholder="What's your name?">
-        <button type="submit">확인</button>
-    </form>
-    <h4 class="js-greetings greetings">hello!</h4>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="daynight.js"></script>
-</body>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    </div>
 
 </html>
