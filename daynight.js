@@ -1,14 +1,14 @@
 const dayNightBtn = document.querySelector("#js-daynight")
-const BG_DARK = document.querySelector(".body-container")
+const BODY_BG = document.querySelector(".body-container")
 
 function handleClick(){
-    if(dayNightBtn.value==='day'){
-        dayNightBtn.value='night';
-        BG_DARK.classList.add("bg-dark");
+    if(dayNightBtn.value==='🌞'){
+        dayNightBtn.value='🌜';
+        BODY_BG.classList.add("bg-dark");
         }
     else{
-        dayNightBtn.value='day';
-        BG_DARK.classList.remove("bg-dark");
+        dayNightBtn.value='🌞';
+        BODY_BG.classList.remove("bg-dark");
     }
 }
 

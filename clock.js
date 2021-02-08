@@ -14,7 +14,7 @@ function getTime() {
     //hours는 hours의%12이다. hours가 12일때는 값이 0이 되므로 12로 리턴한다.
     
     
-    clockTitle.innerText = `${hours}시${minutes<10?`0${minutes}분`:`${minutes}분`}${AmOrPm}`;
+    clockTitle.innerText = `${hours}시 ${minutes<10?`0${minutes}분`:`${minutes}분`} ${AmOrPm}`;
     //여기서는 미니if를 사용하여 시간이 10보다 작을때 01 처럼 표시될 수 있도록 하였다.
     //만약 minutes가 10보다 작다면 `0${minutes}분`를 리턴하고 아니면 `${minutes}분`를 리턴해라!
 }

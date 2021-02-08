@@ -1,0 +1,132 @@
+@import "reset.css";
+@import "variable.css";
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Stylish', sans-serif;
+    font-size: 20px;
+    background-color:#34495e;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    
+}
+
+.body-container{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* bg.js */
+.bgImage{
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+/* header */
+header{
+    display:flex;
+    margin: 10px;
+    margin-bottom: none;
+    justify-content: space-between;
+}
+
+.weather{
+    padding: 20px;
+    border-radius: 20px;
+    background-color:var(--indigo);
+}
+
+.daynight{
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--indigo);
+    color: white;
+    background-color:var(--indigo);
+    cursor: pointer;
+}
+
+
+
+/* daynight.js */
+.bg-dark{
+    background-color:rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* main */
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 100px;
+    background-color: rgba(52, 73, 94,0.8);
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+form input{
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+/* greetings */
+.form,
+.greetings{
+    display: none;
+}
+
+.showing{
+    display:block;
+    text-align: center;
+}
+
+.clock{
+    font-size: 50px;
+}
+
+.greetings{
+    margin: 30px 0 0 0;
+}
+
+.toDoList{
+    margin: 10px 0px;
+}
+
+.toDoList li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.toDoList button{
+    padding: 5px;
+    border-radius: 50%;
+    margin-right:10px;
+    background-color: white;
+    border: 1px solid white;
+
+}
+

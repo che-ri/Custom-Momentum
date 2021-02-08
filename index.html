@@ -5,29 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Momentum</title>
 </head>
 
 <body>
-    <div class="body-container bg-dark">
-        <input id="js-daynight" type="button" value="night">
-
-        <div class="js-clock">
-            <h1>00:00</h1>
-        </div>
-
-        <form class="js-form form showing">
-            <input type="text" placeholder="What's your name?">
-        </form>
-
-        <h4 class="js-greetings greetings">hello!</h4>
-
-        <form class="js-toDoForm">
-            <input type="text" placeholder="Write a to do">
-        </form>
-        <ul class="js-toDoList"></ul>
-        <span class="js-weather"></span>
+    <div class="body-container">
+        <header>
+            <input id="js-daynight" class="daynight" type="button" value="🌞">
+            <span class="js-weather weather"></span>
+        </header>
+        <main>
+            <section class="clock-section">
+                <div class="js-clock clock">
+                    <h1>00:00</h1>
+                </div>
+            </section>
+            <section class="form-section">
+                <form class="js-form form showing">
+                    <input type="text" placeholder="What's your name?">
+                </form>
+                <h4 class="js-greetings greetings">hello!</h4>
+                <form class="js-toDoForm toDoForm">
+                    <input type="text" placeholder="오늘의 할 일은?">
+                </form>
+                <ul class="js-toDoList toDoList"></ul>
+            </section>
+        </main>
     </div>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
@@ -35,6 +39,7 @@
     <script src="todo.js"></script>
     <script src="bg.js"></script>
     <script src="weather.js"></script>
-    </div>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
 
 </html>
