@@ -12,7 +12,11 @@
 <body>
     <div class="body-container">
         <header>
-            <input id="js-daynight" class="daynight" type="button" value="🌞">
+            <div class="header-control">
+                <input id="js-daynight" class="daynight" type="button" value="🌞">
+                <div><button id="play-btn"><i class="far fa-play-circle"></i></button>
+                    <iframe id="audio" width="100" height="50" src="https://www.youtube.com/embed/_DClKudgeD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
             <span class="js-weather weather"></span>
         </header>
         <main>
@@ -36,6 +40,7 @@
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="daynight.js"></script>
+    <script src="music.js"></script>
     <script src="todo.js"></script>
     <script src="bg.js"></script>
     <script src="weather.js"></script>
