@@ -1,6 +1,6 @@
 const toDoForm = document.querySelector(".js-toDoForm"),
   toDoInput = toDoForm.querySelector("input"),
-  toDoList = document.querySelector(".js-toDoList");
+  pendingList = document.querySelector(".js-toDoList");
 
 const PENDING = "PENDING";
 
@@ -13,7 +13,7 @@ function deleteToDo(event) {
   //btn은 이벤트의 타겟을 말한다.
   const li = btn.parentNode;
   //li는 btn의 부모요소
-  toDoList.removeChild(li);
+  pendingList.removeChild(li);
   //li를 지운다.
   const cleanToDos = toDos.filter(function (toDo) {
     return toDo.id !== parseInt(li.id);
@@ -39,7 +39,7 @@ function paintToDo(text) {
   li.appendChild(delBtn);
   li.appendChild(span);
   li.id = newId;
-  toDoList.appendChild(li);
+  pendingList.appendChild(li);
   const toDoObj = {
     text: text,
     //텍스트라는 키에 text(painttodo의 인자)
